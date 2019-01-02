@@ -1,0 +1,65 @@
+
+body{
+  color:       #878787;
+  margin:      0;
+  font-size:   1em;
+  font-family: Helvetica, Arial, sans-serif;
+
+}
+/* to find em value div respective px size with 16, eg: 26px = 26/16 em */
+.main-header{
+  background-color: #ffa949;
+}
+
+.title{
+  color:     white;
+  font-size: 1.625rem;
+}
+
+h1{
+  font-size:      5.625rem;
+  color:          white;
+  text-transform: uppercase;
+}
+
+h2{
+  font-size: 53px;
+}
+/* hello all, the shortcut for comments is ctrl+/ */
+h3{
+  font-size: 20px;
+  color:     #48525c;
+}
+
+.primary-content,
+.main-header{
+  text-align: center;
+}
+
+.primary-content,
+.secondary-content{
+  width: 60%;
+}
+
+.t-border{
+  border-top: 2px solid lightgrey;
+}
+
+a:link {
+  color:           red;
+  text-decoration: none;
+}
+
+a:visited{
+  color: black;
+}
+
+a:hover{
+  font-size: 25px;
+}
+
+#main-footer{
+  padding-top:    60px;
+  padding-bottom: 60px;
+  border-bottom:  10px solid orange;
+}
