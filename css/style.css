@@ -23,12 +23,15 @@ h1{
 }
 
 h2{
-  font-size: 53px;
+  font-size:     53px;
+  line-height:   1.1;
+  margin-bottom: 0.5em;
 }
 /* hello all, the shortcut for comments is ctrl+/ */
 h3{
-  font-size: 20px;
-  color:     #48525c;
+  font-size:     20px;
+  color:         #48525c;
+  margin-bottom: 1.7em;
 }
 
 .primary-content,
@@ -38,7 +41,8 @@ h3{
 
 .primary-content,
 .secondary-content{
-  width: 60%;
+  width:  60%;
+  margin: auto;
 }
 
 .t-border{
@@ -62,4 +66,20 @@ a:hover{
   padding-top:    60px;
   padding-bottom: 60px;
   border-bottom:  10px solid orange;
+}
+
+.wildlife{
+  color:            white;
+  background-color: #434a52;
+  padding:          18% 24%;
+  border-top:       10px #ffa949 solid;
+  margin:           105px 0px 60px;
+}
+
+.callout{
+  font-size: 1.25em;
+  border-bottom: 3px solid;
+  margin-top: 20px;
+  display: inline-block;
+  padding: 0 9px 3px;
 }
