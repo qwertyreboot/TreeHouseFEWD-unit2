@@ -1,4 +1,9 @@
 
+@font-face {
+  font-family: 'my font';
+  src: url('../fonts/alegreya/Alegreya-Regular.ttf') format('truetype');
+}
+
 *{
   box-sizing: border-box;
 }
@@ -11,16 +16,25 @@ body{
 }
 /* to find em value div respective px size with 16, eg: 26px = 26/16 em */
 .main-header{
-  background-color: #ffa949;
   height:           850px;
   padding-top:      170px;
-  background-image: url(../images/mountain.jpg);
-  background-size: 100%;
+  background: linear-gradient(#ffa949, transparent 50%),
+              #ffa949 url(../images/mountain.jpg) no-repeat center;
+  background-size: cover;
 }
 
 .title{
   color:     white;
   font-size: 1.625rem;
+  letter-spacing: 0.065em;
+  font-weight: 200;
+  border-bottom: 2px solid;
+  padding-bottom: 10px;
+}
+
+h1,
+h2{
+  font-family: 'my font', sans-serif;
 }
 
 h1{
@@ -28,6 +42,8 @@ h1{
   color:          white;
   text-transform: uppercase;
   line-height:    1.3;
+  text-shadow: 5px 8px 10px red;
+  margin: 12px 0 0;
 }
 
 h2{
@@ -45,6 +61,7 @@ h3{
 img{
   max-width: 100%;
   margin-bottom: 20px;
+  border-radius: 25px;
 }
 
 ol,
@@ -105,6 +122,8 @@ a:hover{
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  box-shadow: inset 0 0 50px 10px rgba(0, 0, 0, 1);
+  border-radius: 10px 50px;
 }
 
 .wildlife p{
@@ -120,6 +139,7 @@ a:hover{
 
 .arrow{
   width: 50px;
+  margin-top: 200px;
 }
 
 .resorts,
@@ -139,4 +159,44 @@ a:hover{
   content: "";
   display: table;
   clear: both;
+ } /* used to stop the side effects of using float */
+
+@media (max-width: 1024px) {
+  .primary-content,
+  .secondary-content{
+    width: 90%;
+  }
+  .wildlife{
+    padding: 10% 12%;
+    margin: 50px 0 20px;
+  }
 }
+
+@media (max-width: 768px) {
+   .primary-content,
+   .secondary-content{
+     width: 100%;
+     padding: 20px;
+     border: none;
+   }
+   .main-header{
+     max-height: 380px;
+     padding: 50px 25px 0;
+   }
+   .title{
+     font-size: 1rem;
+     border: none;
+   }
+   h1, h2{
+     font-size: 3rem;
+     line-height: 1.1;
+   }
+   .arrow{
+     display: none;
+   }
+   .resorts,
+   .tips{
+     float: none;
+     width: 92%
+   }
+ }
