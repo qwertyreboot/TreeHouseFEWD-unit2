@@ -35,11 +35,11 @@ a{
   padding-right: 1em;
 }
 
- .main-header{
+ .sec{
    background: #3acec2;
-   padding-top: 1.5em;
-   padding-bottom: 1.5em;
+   /* padding-bottom: 1.5em; */
    margin-bottom: 80px;
+   text-align: center;
  }
 
  .main-footer{
@@ -47,6 +47,12 @@ a{
    padding: 2em 0;
    background: #d9e4ea;
  }
+
+ .roundimage{
+   border-radius: 50%;
+   padding-top: 4px;
+ }
+
 
  @media (min-width: 769px) {
 
@@ -70,13 +76,21 @@ a{
      margin-bottom: 90px;
    }
 
-   .primary{
+   .col {
      float: left;
-     width: 50%
+   }
+
+   .primary{
+     width: 30%;
+     /* float: right; */
    }
    .secondary{
-     float: right;
-     width:50%
+     width: 40%;
+     /* float: right; */
+   }
+   .teritary{
+     width: 30%;
+     /* float: left; */
    }
 
 
